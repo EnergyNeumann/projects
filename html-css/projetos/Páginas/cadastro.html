@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - Cadastro</title>
+    </head>
+<body>
+    <center><h1> Cadastre-se </h1><center>
+    <form>
+        <table><center>
+            <tr>
+                <td><label for="usuario">Nome:</td>
+                <td><input type="text" id="usuario" size="50" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td><label for="senha">Senha:</td>
+                <td><input type="password" id="senha" size="50" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td><input type="radio" name="sexo" id="cMasc"><label for="cMasc">Masculino</label>
+                <input type="radio" name="sexo" id="cFem"><label for="cFem"> Feminino</label><br></td>
+            </tr>
+            <tr>
+                <td>Interesses:</td>
+                <td><input type="checkbox" id="fut"> <label for="fut">Futebol</label> <br>
+                <input type="checkbox" id="cursos"> <label for="cursos">Cursos </label><br>
+                <input type="checkbox" id="eletronica"> <label for="eletronica">Eletrônica</label></td>
+            </tr>
+            <tr>
+                <td>Estado: </td>
+            <td><select>
+            <option>SP</option>
+            <option>MG</option>
+            <option>RJ</option>
+            <option>RS</option>
+        </select></td>
+    </tr>
+        <td><label for="obs"> Observações:</label></td> 
+        <td><textarea name="observações" cols="40" rows="15"></textarea><br></td>
+    </tr>
+    <tr> 
+        <td></td>   
+        <td><input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar"></td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>

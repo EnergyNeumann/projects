@@ -1,0 +1,50 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Trebuchet MS, Helvetica, sans-serif
+}
+#conteiner{
+	width: 1020px;
+	margin: 0px auto;
+	background-color: #f2f2f2;
+}
+header{
+	background-image: url(../imagens/fundo.png);
+	height: 100px;
+	padding: 20px;
+	text-align: center;
+}
+nav{
+	height: 50px;
+	background-color: #924011;
+}
+#topo ul{
+	background: #924011;
+	float: left;
+}
+#topo ul li{
+	float: left;
+}
+#topo ul a{
+	font-size: 0.9em;
+	display: block;
+	padding: 0.7em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+}
+#topo ul a:hover{
+	color: #69001d;
+}
+#navegacao{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#logo{
+	text-align: center;
+	padding: 5px;
+}
+#logo img{
+	height: 60px;
+}

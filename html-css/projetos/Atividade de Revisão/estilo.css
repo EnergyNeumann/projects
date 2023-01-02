@@ -1,0 +1,73 @@
+body{
+/*aplique uma cor de fundo*/
+	background-color: #D7D9D9;	
+}
+
+p{
+	font-family: Verdana;
+	font-size: 13px;
+	text-align: justify;
+}
+
+#menu{
+	height: 30px;
+	width: 960px;
+	padding: 10px 0px;
+	text-align: center;
+	word-spacing: 15px;
+	background-color: #262625;
+}
+/*FORMATAÇÃO DO LINK*/
+
+#cabecalho{
+	height: 200px;
+	margin: 5px 0px;
+} 
+.cabecalho img{
+	width: 960px;
+	height: 200px;
+}
+#conteudo{
+	width: 960px;
+}
+
+#principal{
+	height: auto;
+	width: 680px;
+	float: left;
+	margin: 5px 0px 10px 0px;
+	padding: 5px;
+	background-color: #D7D9D9;
+}
+#lateral{
+	width: 255px;
+	border-radius: 5px;
+	margin: 0px 0px 5px 5px; 
+	font-size: 10px;
+	float: right;
+	padding: 3px;
+	height: 400px;
+	margin: 5px 0px 5px 5px;
+	background-color: #262625;
+}
+#lateral img{
+	width: 100%;
+	height: auto;
+}
+#rodape{
+	width: 960px;
+	height: 80px;
+	clear: both;
+	text-align: center;
+	color: #D7D9D9;
+	background-color: #262625;
+}
+#pagina{
+	margin: 15px auto;
+	border: 2px solid #C6BA88;
+	width: 960px;
+}
+
+a:link{
+	color: #D7D9D9;
+}

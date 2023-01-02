@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width initial-scale=1"> 
+    <title>Museu Nacional</title>
+</head>
+<body class="home">
+    <section class="conteiner">
+        <header class="cabecalho">
+            <div id="logo">
+                
+            </div>
+        </header>
+        <nav class="menu"><!-- Início nav -->
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="exposi" href="exposi.html">Exposições</a></li>
+                <li><a href="#">Pesquisa</a></li>
+                <li><a href="#">Acervo</a></li>
+                <li><a href="#">vídeos</a></li>
+                <li><a href="#">fotos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav><!--/fim nav -->
+        <main class="principal">
+            <article id="capa">
+                <img src="img/museu.png">
+            </article>
+            <article id="video">
+                <h3>Conheça o museu</h3>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/aBFT2-hFGvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article id="mapa">
+                <h3> Encontre o museu Nacional</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1625598404018!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+            <article id="exposicao">
+                <h3>Exposições</h3>
+                <ul>
+                    <li><a href="#">Quando Nem Tudo Era Gelo – Novas Descobertas no Continente Antártico</a></li>
+                    <li><a href="#">Santo Antônio de Sá: Primeira Vila do Recôncavo da Guanabara</a></li>
+                    <li><a href="#">Os Primeiros Brasileiros</a></li>
+                    <li><a href="#"><strong>Todas exposições</strong></a></li>
+                </ul>
+            </article>
+            <article id="texto">
+                <h3>Restauração do Museu Nacional</h3>
+                <p>
+                    Está no ar o nosso primeiro mini documentário sobre a restauração de elementos históricos e artísticos que resistiram, no Museu Nacional/UFRJ. Pisos, tronos, guirlandas, pinturas murais, ornamentos de salas e jardins históricos são alguns dos elementos que estão sendo protegidos.</p>
+                <a href="#"><strong>Todo texto</strong></a>
+            </article>
+        </main>
+        <aside class="lateral">
+            <div id="depoimento">
+                <img src="img/depoimento.png">
+            </div>
+            <div id="visita">
+                <h4>Faça uma visita</h4><br>
+                <form>
+                    <fieldset>
+                        <legend>Selecione uma data</legend>
+                        <label for="data">Data: </label>
+                        <input type="text" id="data" value="dd/mm/aaaa">
+                        <label for="qtd">Qtde pessoas:</label>
+                        <input type="text" id="qtd" value="1">
+                    </fieldset>
+                   <br> <input class="botao" type="submit" value="Verificar disponibilidade">
+                </form>
+            </div>
+            <div id="galeria">
+                <h4>Galeria de fotos</h4>
+                <a href="#">
+                    <img src="img/imagem1.jpg" alt="Descrição da imagem1">
+                </a>
+                <a href="#">
+                    <img src="img/imagem2.jpg" alt="Descrição da imagem2">
+                </a>
+                <a href="#">
+                    <img src="img/imagem3.jpg" alt="Descrição da imagem3">
+                </a>
+                <a href="#">
+                    <img src="img/imagem4.jpg" alt="Descrição da imagem4">
+                </a>
+            </div>
+        </aside>
+        <footer id="grad1" >
+            <h6>MUSEU<span> NACIONAL</span></h6>
+            <h5>Endereço: Quinta da Boa Vista - São Cristóvão, Rio de Janeiro - RJ, 20940-040 // Richard Klaoss Neumann - GU3010716</h5>
+            <h5><span>Informações:</span> museu@mn.ufrj.br</h5>
+        </footer>
+    </section>
+</body>
+</html>

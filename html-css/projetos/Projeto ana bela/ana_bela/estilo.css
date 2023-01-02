@@ -1,0 +1,115 @@
+/* Comentário - CÓDIGO CSS */
+body{
+   background: url(imagens/fundo.png);
+   font-family: Arial; 
+   font-size: 16px;
+   width: 900px;
+   margin: 10px auto;
+}
+
+h1{
+	color: #62504E;
+	font-style: italic;
+	font-family: "Times New Roman";
+}
+
+p{
+	font-size: 14px;
+	text-align: justify;
+}
+/* Criando o seletor identificador para o rodapé */
+#rodape{
+	border-top: #222c40 solid 1px;
+	text-align: center;
+	color: #62504E;
+	font-size: 12px;
+	clear: both;
+}
+
+/* formatando o menu */
+/* estado normal do link */
+a:link{
+	color: #4b566a;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px;
+}
+a:visited {
+	color: #88696C;
+}
+
+a:hover {
+	color: #222C40;
+	background-color: #F9F1C6
+}
+a:active{
+	color: #88696C;
+}
+ol{
+	list-style: upper-roman;
+}
+.galeria{
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 168px;
+}
+.galeria:hover{
+	border: 1px solid #777; 
+}
+.galeria img{
+	width: 100%;
+	height: auto;
+}
+.descricao{
+	padding: 15px;
+	text-align: center;
+}
+#parte1{
+	width: 40%;
+	float: left;
+}
+
+#parte2{
+	width: 50%;
+	float: left;
+	margin: 5px;
+}
+#parte2 img{
+	margin: 30px auto;
+	padding: 20px; 
+}
+
+input[type=text], textarea{
+	width: 90%;
+	padding: 6px 12px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	border-radius:  5px;
+	color: #777;
+}
+input[type=submit],[type=reset]{
+	width: 30%;
+	background-color: #8fa89b;
+	color: #f2f2f2;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background-color: #F9F1C6;
+	color: #62504E;
+}
+
+input[type=reset]:hover{
+	background-color: #F9F1C6;
+	color: #62504E;
+}
+#form{
+	border-radius: 5px;
+	background-image: url(imagens/foto1.png);
+	padding: 20px; 
+}

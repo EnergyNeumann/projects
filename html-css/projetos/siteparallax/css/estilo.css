@@ -1,0 +1,67 @@
+html, body{
+	margin: 0px;
+	color: #111;
+	font: 15px arial, sans-serif;
+	height: 100%;
+}
+h3{
+	color: #111;
+	text-align: center;
+	text-transform: uppercase;
+}
+.conteudo{
+	text-align: justify;
+	padding: 50px 80px;
+}
+.imagem1, .imagem2, .imagem3, .imagem4{
+	position: relative;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.imagem1{
+	background-image: url(../img/jogo.jpg);
+}
+.imagem2{
+	background-image: url(../img/musica.jpg);
+}
+.titulo-imagem{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+.titulo-imagem span.titulo{
+	font-weight: bold;
+	color: #f2f2f2;
+	background-color: #363636;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 5px;
+}
+footer{
+	border: 2px solid #ffdab9;
+	width: 1305px;
+	height: 100px; 
+	padding: 1px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	clear: both;
+	color: #111;
+}
+footer, .conteudo{
+	animation-name: cores;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	}
+	@keyframes cores{
+		0% { background: #FFDAB9;}
+		25% { background: #ffd29c;}
+  	  	50% { background: #FFD391;}
+  		75% { background: #FBE0B5;}
+  		100% { background: #FFDAB9;}
+}
