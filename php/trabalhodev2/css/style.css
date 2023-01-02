@@ -1,0 +1,335 @@
+/* css do site da clinica medica*/
+
+:root{ /* declarar variavel dentro do css */
+    --branco: #f2f2f2; /* cores principais do site */
+    --azulclarin: #BDE8F2;
+    --azulclaro: #75B2BF;
+    --azulescuro: #03658C;
+    --azulmaisescuro: #01364b;
+}
+
+*{ /* reset */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /* ngm vai ultrapassar a borda da caixa */
+}
+
+/*elementos base nav e body*/
+
+body{
+    background: var(--azulclarin);
+    font-family: Helvetica, sans-serif;
+    color: var(--branco);
+    overflow-x: hidden;
+}
+
+header .containerss{
+    display: flex; /* utiliza a flexbox para alinhar os elementos em tela*/
+    flex-direction: row; /* msm se n colocasse ela, ela ia vir do msm jeito */
+    align-items: center;
+    justify-content: space-between; /* espaço entre o clinica-chan*/
+    height: 60px;
+    background-color: var(--azulclaro);
+}
+
+header .logo{
+    margin-left: 30px;
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    animation-name: cores;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	}
+	@keyframes cores{
+		0% { color: #003f58;}
+		25% { color: #03658C;}
+  	  	50% { color: #03658C;}
+        75% { color: #03658C;}
+        100% { color: #003f58;}
+}
+
+header nav a{
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--azulescuro);
+    margin-right: 30px;
+    transition: 1s ease all; /*cuida da parte da transição entre uma animação e outra */
+}
+
+header nav a:active{
+    background-color: var(--azulescuro);
+}
+
+header nav a:hover{
+    color: var(--branco);
+}
+
+/*barra de navegação search*/
+
+.search-box{
+    height: 40px;
+    border-radius: 40px;
+    margin-left: 150px;
+    margin-top: 4px;
+    padding: 10px;
+    background-color: var(--azulescuro); 
+}
+
+.search-btn{
+    color: var(--azulclaro); /* cor da lupa*/
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: var(--branco);
+    font: 16px;
+    transition: 0.4s;
+    line-height: 20px;
+    width: 0px;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+
+}
+
+.search-box input::placeholder { /* mudar cor do placeholder */
+    color: var(--azulclaro);
+}
+
+/*section principal*/
+
+.extras{
+    position: absolute;
+    bottom: -500px; /* para descer a bolona, aumentar o numero*/
+    right: -500px; /* para a bolona ir para a esquerda, diminuir o numero*/
+    width: 940px;
+    height: 940px;
+    border-radius: 50%;
+    background-color: var(--azulclaro);
+}
+
+.extras h5{
+    font-size: 20px;
+    margin-top: 220px;
+    margin-right: 500px;
+    margin-left: 100px;
+    text-align: left;
+    color: var(--azulmaisescuro);
+}
+
+.texto-sobre h1{
+    margin-top: 160px;
+    font-size: 30px;
+    margin-left: 70px;
+    color: var(--azulescuro);
+}
+
+.texto-sobre p{
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 70px;
+    max-width: 600px;
+    font-size: 17px;
+    color: var(--azulescuro);
+}
+
+.texto-sobre a{
+    margin-left: 70px;
+    color: var(--azulmaisescuro);
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 1s ease all; /*cuida da parte da transição entre uma animação e outra */
+}
+
+.texto-sobre a:hover{
+    color: var(--azulclaro);
+}
+
+/*registrar, forms e login */
+
+.form{
+    background-color: var(--azulclaro);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+}
+form h2{
+    text-align: center;
+    color: var(--branco);
+    font-family: Helvetica, sans-serif;
+}
+form input[type=text], form input[type=password]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--branco);
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.form input[type=submit]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--branco);
+    border: 0;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: 1s ease all; /*cuida da parte da transição entre uma animação e outra */
+}
+
+.form input[type=submit]:hover{
+    background-color: var(--azulescuro);
+}
+
+.eye{
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form a{
+    text-align: right;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--branco);
+    text-decoration: none;
+    transition: 1s ease all; /*cuida da parte da transição entre uma animação e outra */
+}
+
+.form a:hover{
+    color: var(--azulescuro);
+}
+
+/* Administração */
+
+.admmain{
+    background-color: var(--azulclaro);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.admmain h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.admmain p{
+    text-align: justify;
+}
+
+/* resto css para forms maiores*/
+
+.aplicandogrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form2{
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: var(--azulclaro);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form2 input[type=submit]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--branco);
+    border: 0;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: 1s ease all; /*cuida da parte da transição entre uma animação e outra */
+}
+
+.form2 input[type=submit]:hover{
+    background-color: var(--azulescuro);
+}
+
+.form2 a{
+    text-align: right;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--branco);
+    text-decoration: none;
+    transition: 1s ease all; /*cuida da parte da transição entre uma animação e outra */
+}
+
+.form2 a:hover{
+    color: var(--azulescuro);
+}
+
+.form2 h2{
+    margin-bottom: 10px;
+}
+
+/* css para menores forms */
+
+.form3{
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: var(--azulclaro);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 270;
+}
+
+.form3 input[type=submit]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--branco);
+    border: 0;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: 1s ease all; /*cuida da parte da transição entre uma animação e outra */
+}
+
+.form3 input[type=submit]:hover{
+    background-color: var(--azulescuro);
+}
+
+.form3 a{
+    text-align: right;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--branco);
+    text-decoration: none;
+    transition: 1s ease all; /*cuida da parte da transição entre uma animação e outra */
+}
+
+.form3 a:hover{
+    color: var(--azulescuro);
+}
+
+.form3 h2{
+    margin-bottom: 10px;
+}
