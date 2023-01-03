@@ -12,13 +12,14 @@ while True:
         totalvalor -= ced #sacará em cedula de 50
         totced += 1 #quando tirar, aumentará total de cedulas de 50 em 1
     else: #se não puder tirar
-        print(f'Total de {totced} cédulas de R${ced:.2f}')
-        if ced == 50: #se a cedula for 50 e não der para sacar, muda pra 20
-            ced = 20
-        elif ced == 20: #se a cedula for 20 e não der para sacar, muda pra 10
-            ced = 10
-        elif ced == 10: #se a cedula for 10 e não der para sacar, muda pra 1
-            ced = 1
-        if totalvalor == 0: #se o valor do banco ficar 0, para o programa
-            break
+        if totced > 0:
+            print(f'Total de {totced} cédulas de R${ced:.2f}')
+            if ced == 50: #se a cedula for 50 e não der para sacar, muda pra 20
+                ced = 20
+            elif ced == 20: #se a cedula for 20 e não der para sacar, muda pra 10
+                ced = 10
+            elif ced == 10: #se a cedula for 10 e não der para sacar, muda pra 1
+                ced = 1
+            if totalvalor == 0: #se o valor do banco ficar 0, para o programa
+                break
 print('Volte sempre ao Banco ENE, e tenha um bom dia!')
