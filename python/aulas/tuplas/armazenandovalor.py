@@ -1,0 +1,1 @@
+lanche = ('Hambúrguer', 'Suco', 'Pizza', 'Pudim') #pode tirar os parenteses, tbm
