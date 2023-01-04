@@ -3,3 +3,4 @@ b = (5, 8, 1, 2)
 c = a + b
 d = b + a
 print(c, d)
+print(len(c))
