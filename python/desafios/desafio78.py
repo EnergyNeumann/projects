@@ -3,7 +3,7 @@ listanum = []
 maior = menor = 0
 for valor in range(0, 5):
     listanum.append(int(input(f'Digite um valor para posição {valor} ')))
-    if valor == 0: #testando maior valor e menor valor
+    if valor == 0: #testando maior valor e menor valor. se a posição for a 0
         maior = menor = listanum[valor]
     else:
         if listanum[valor] > maior:
