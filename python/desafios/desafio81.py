@@ -7,8 +7,8 @@ esta = ''
 while True:
     num = int(input('Digite um valor: '))
     lista.append(num)
-    if num == 5:
-        esta = 'sim'
+    # if num == 5:
+    #     esta = 'sim'
     cont = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if cont in 'N':
         break
@@ -18,7 +18,11 @@ while True:
 lista.sort(reverse=True)
 print(f'Você digitou {len(lista)} elementos')
 print(f'Os valores em ordem decrescente são: {lista}')
-if esta == 'sim':
+# if esta == 'sim':
+#     print('O valor 5 está na lista')
+# else:
+#     print('O valor 5 não está na lista')
+if 5 in lista:
     print('O valor 5 está na lista')
 else:
     print('O valor 5 não está na lista')
