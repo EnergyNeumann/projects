@@ -10,5 +10,12 @@
     <h1>Reproduzindo áudio</h1>
     <p>Vamos aprender a reproduzir áudio em HTML5</p>
     <audio src="Lament Of The Ancients - Asher Fulero.mp3" controls autoplay></audio>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="Lament Of The Ancients - Asher Fulero.mp3" type="audio/mpeg">
+        <source src="Lament Of The Ancients - Asher Fulero.ogg" type="audio/ogg">
+        <source src="Lament Of The Ancients - Asher Fulero.wav" type="audio/wav">
+        <p>infelizmente o navegador não tem suporte <a href="Lament Of The Ancients - Asher Fulero.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
 </body>
 </html>
