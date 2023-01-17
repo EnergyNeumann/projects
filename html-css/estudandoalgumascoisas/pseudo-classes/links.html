@@ -29,13 +29,30 @@
             color: yellow;
         }
 
+        .especial{
+            background-color: rgb(255, 175, 175);
+        }
+
+        .especial::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial::before{
+            content: '>';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
     </style>
 </head>
 <body>
     <h1>Personalizando links</h1>
     <ul>
         <li><a href="https://www.github.com/EnergyNeumann" target="_blank">Repositório github</a></li>
-        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="https://www.youtube.com" target="_blank" class="especial">Youtube</a></li>
         <li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
     </ul>
 </body>
