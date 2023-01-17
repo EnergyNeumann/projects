@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(130, 252, 130);
+    font-family: Arial, Helvetica, sans-serif;
+} /* html id = #; class = .*/
+
+h1{
+    color: rgb(2, 75, 2);
+}
+
+h1#principal{
+    text-align: center;
+    backgroundgit ad-color: rgb(42, 109, 42);
+    color: white;
+}
+
+h2{
+    color: rgb(16, 116, 16);
+}
