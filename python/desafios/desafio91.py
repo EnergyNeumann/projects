@@ -4,7 +4,7 @@ from time import sleep
 from operator import itemgetter
 jogo = {}
 for j in range(1, 5):
-    jogo[f'jogador {j}'] = randint(1, 6)
+    jogo[f'jogador {j}'] = int(randint(1, 6))
 print(jogo)
 ranking = list()
 print('Valores sorteados:')
