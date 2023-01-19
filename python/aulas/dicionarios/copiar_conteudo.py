@@ -1,8 +1,7 @@
 estado = dict()
-copia = list()
 brasil = list()
 for c in range(0, 3):
-    estado['deruf'] = str(input('Unidade Feativa: '))
+    estado['uf'] = str(input('Unidade Federativa: '))
     estado['sigla'] = str(input('Sigla do Estado: '))
     brasil.append(estado.copy())
 for e in brasil: #mostrando bonito
