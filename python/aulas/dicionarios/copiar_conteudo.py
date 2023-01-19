@@ -10,7 +10,7 @@ for e in brasil: #mostrando bonito
 
 for e in brasil:
     for k, v in e.items():
-        print(f'O campo {k} tem valor {v}')
+        print(f'O campo {k} tem valor {v}')#mostra o campo uf tem valor Acre; o campo sigla tem valor AC
 
 for e in brasil:
     for v in e.values():
