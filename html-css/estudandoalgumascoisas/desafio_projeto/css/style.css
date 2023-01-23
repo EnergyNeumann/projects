@@ -38,6 +38,10 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after{
+    content: '\00A0\1F517'
+}
+
 header{
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
     min-height: 150px;
@@ -147,7 +151,43 @@ main strong{
     font-weight:bold;
 }
 
+aside{
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.541);
+}
+
+aside > h3{
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
 footer{
     background-color: var(--cor4);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 0px 6px 0px 6px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
