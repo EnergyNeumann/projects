@@ -97,7 +97,6 @@ main{
     border-bottom-right-radius: 10pgx;
 }
 
-
 main p{
     margin: 15px 0px 15px 0px;
     text-align: justify;
@@ -114,6 +113,9 @@ main h1{
 main h2{
     color: var(--cor4);
     font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
 }
 
 main img{
@@ -124,6 +126,25 @@ main img.pequena{
     max-width: 350px;
     margin: auto;
     display: block;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+    transition: 0.2s;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight:bold;
 }
 
 footer{
