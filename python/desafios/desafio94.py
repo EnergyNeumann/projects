@@ -41,7 +41,7 @@ print('-='*20)
 print('Lista das pessoa que estão acima da média: ', end='') 
 for p in galera:
     if p['idade'] >= media:
-        print(' ')
+        print('   ', end='')
         for k, v in p.items():
             print(f'{k} = {v}; ', end='')
         print()
