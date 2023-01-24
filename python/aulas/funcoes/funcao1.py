@@ -1,6 +1,8 @@
-def mostrarLinha():
-    print('------------')
+def titulo(txt):
+    print('-'*30)
+    print(txt)
+    print('-'*30)
 
-mostrarLinha()
-print('OI')
-mostrarLinha()
+titulo('RICHARD LENDA')
+titulo('TALVEZ NÃO SEJA')
+titulo('MAS ELE TA TENTANDO')

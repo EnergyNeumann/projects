@@ -1,5 +1,6 @@
-def titulo(txt):
-    print('-'*30)
-    print(txt)
-    print('-'*30)
-titulo('RICHARD LENDA')
+def mostrarLinha():
+    print('------------')
+
+mostrarLinha()
+print('OI')
+mostrarLinha()
