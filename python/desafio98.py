@@ -11,7 +11,12 @@ def contador(i, f, p):
             print(f'{cont} ', end='')
             cont+=p
         print('FIM')
-    
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='')
+            cont -= p
+        print('FIM')
         
 
 contador(1, 10, 1) #de 1 até 10 indo de 1 em 1
