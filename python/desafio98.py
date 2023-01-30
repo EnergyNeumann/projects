@@ -7,6 +7,11 @@ def contador(i, f, p):
     print('-='*20)
     print(f'Contagem de {i} até {f} de {p} em {p}')
     sleep(2.5)
+
+    if p < 0: #se o meio (passo) for negativo, trocará para positivo
+        p *= -1
+    if p == 0: #se o passo for 0, será transformado em 1
+        p = 1
     if i < f: #se o início for maior doq o fim. Pois, se colocar sem isso, o 2º contador (10, 0, 2) não funcionará, até porque 10 é maior do que 10
         cont = i
         while cont <= f:
