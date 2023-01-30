@@ -1,5 +1,6 @@
 def dobra(lst):
     pos = 0
+    print(len(lst))
     while pos < len(lst):
         lst[pos]*=2
         print(pos)
