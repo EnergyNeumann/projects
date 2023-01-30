@@ -1,6 +1,7 @@
 def soma(*valores):
     s = 0
     for num in valores:
+        print(num)
         s += num
     print(f'Somando os valores {valores} temos {s}')
 
