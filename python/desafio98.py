@@ -21,8 +21,6 @@ def contador(i, f, p):
             sleep(0.5)
             cont -= p
         print('FIM')
-    print('-='*20)
-        
 
 contador(1, 10, 1) #de 1 até 10 indo de 1 em 1
 contador(10, 0, 2)
