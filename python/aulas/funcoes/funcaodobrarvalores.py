@@ -3,7 +3,7 @@ def dobra(lst):
     print(len(lst))
     while pos < len(lst):
         lst[pos]*=2
-        print(pos)
+        pos+=1
 
 valores = [7,2,5,0,4]
 dobra(valores)
