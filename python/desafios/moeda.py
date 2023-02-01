@@ -34,3 +34,13 @@ def resumo(preço = 0, aumento = 0, diminuir = 0):
 
 def moeda(preço = 0, moeda = 'R$'):
     return f'{moeda}{preço:.2f}'.replace('.', ',')#substituir pontos por vírgula
+
+def leiaDinheiro(msg): #função que se digitar letra, dará inválido
+    valido = False
+    while not valido:
+        entrada = str(input(msg)).replace(',', '.').strip()
+        if entrada.isalpha() or entrada.strip() == '':#se for alfanumerico #letras
+            print(f'\033[0;31mERRO: \"{entrada} é um preço inválido!\033[m')
+        else:
+            valido = True
+            return float(entrada)
