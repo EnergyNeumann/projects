@@ -1,14 +1,36 @@
-def metade(num = 0, format=False):
-    res = num / 2
-    return res if format is False else moeda(num) #retorne res se o format for false. se não for, retornará o método moeda formatado
+def metade(preço = 0, format=False):
+    res = preço / 2
+    return res if format is False else moeda(res) #retorne res se o format for false. se não for, retornará o método moeda formatado
 
-def dobro(num = 0, format=False):
-    res = num * 2
-    return res if format is False else moeda(num)
 
-def dez(num = 0, format=False):
-    res = num + (num / 100)*10
-    return res if format is False else moeda(num)
+def dobro(preço = 0, format=False):
+    res = preço * 2
+    return res if format is False else moeda(res)
+
+
+def dez(preço = 0, format=False):
+    res = preço + (preço / 100)*10
+    return res if format is False else moeda(res)
+
+def aumentar(preço = 0, taxaaumento = 0, format=False):
+    res = preço + (preço / 100)*taxaaumento
+    return res if format is False else moeda(res)
+
+def diminui(preço = 0, taxadiminuir = 0, format=False):
+    res = preço - (preço / 100)*taxadiminuir
+    return res if format is False else moeda(res)
+
+def resumo(preço = 0, aumento = 0, diminuir = 0):
+    print('-'*30)
+    print('RESUMO DO VALOR'.center(30))
+    print('-'*30)
+    print(f'Preço analisado:\t{moeda(preço)}')
+    print(f'Dobro do preço: \t{dobro(preço, True):>7}')
+    print(f'Metade do preço: \t{metade(preço, True):>7}')
+    print(f'Com {aumento}% de aumento: \t{aumentar(preço, aumento, True)}')
+    print(f'Com {diminuir}% de diminuição: \t{diminui(preço, diminuir, True)}')
+    print('-'*30)
+
 
 def moeda(preço = 0, moeda = 'R$'):
     return f'{moeda}{preço:.2f}'.replace('.', ',')#substituir pontos por vírgula
