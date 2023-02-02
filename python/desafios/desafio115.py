@@ -15,7 +15,11 @@ while True:
         #opção de listar conteúdo de um arquivo
         arquivo.lerArquivo(arq)
     elif resposta == 2:
-        menu.cabeçalho('Opção 2')
+        #opção de cadastrar pessoa nova
+        menu.cabeçalho('NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = leiaInt('Idade: ')
+        arquivo.cadastrar(arq, nome, idade)
     elif resposta == 3:
         menu.cabeçalho('Saindo do sistema... Até logo!')
         break
