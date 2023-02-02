@@ -12,6 +12,7 @@ def leiaInt(msg):
         else:
             return n
 
+
 def leiaFloat(msg):
     while True:
         try:
@@ -25,6 +26,7 @@ def leiaFloat(msg):
         else:
             return n            
 
-num = leiaInt('Digite um valor inteiro: ')
-num2 = leiaFloat('Digite um número real: ')
-print(f'O valor digitado foi {num}')
+
+num = leiaInt('Sua opção: ')
+# num2 = leiaFloat('Digite um número real: ')
+# print(f'O valor digitado foi {num}')
