@@ -8,3 +8,4 @@ except:
     print('Deu erro')
 else:
     print('Tudo okay')
+    print(site.read())
