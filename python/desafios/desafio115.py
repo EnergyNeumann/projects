@@ -1,5 +1,6 @@
 #115aVamos criar um menu em Python, usando modularização.
 #115bVamos ver como fazer acesso a arquivos usando o Python.
+import desafio113
 import menu
 from time import sleep
 import arquivo
@@ -18,7 +19,7 @@ while True:
         #opção de cadastrar pessoa nova
         menu.cabeçalho('NOVO CADASTRO')
         nome = str(input('Nome: '))
-        idade = leiaInt('Idade: ')
+        idade = desafio113.leiaInt('Idade: ')
         arquivo.cadastrar(arq, nome, idade)
     elif resposta == 3:
         menu.cabeçalho('Saindo do sistema... Até logo!')

@@ -27,7 +27,11 @@ def lerArquivo(nome):
         print('ERRO ao ler arquivo')
     else:
         menu.cabeçalho('PESSOAS CADASTRADAS')
-        print(a.read())#ler o arquivo todo
+        for linha in a: #para cada linha do arquivo
+            dado = linha.split(';')
+            dado[1] = dado[1].replace('\n', '')#tira o \n e coloca um espaço para não ter espaçamento entre os nomes
+            print(f'{dado[0]:<30}{dado[1]:>3} anos')
+        # print(a.read())#ler o arquivo todo
     finally:
         a.close()
 
