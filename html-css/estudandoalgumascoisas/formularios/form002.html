@@ -8,10 +8,18 @@
 </head>
 <body>
     <h1>Teste de formulários</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
         <p>
             <label for="iusu">Usuário</label>
             <input type="text" name="usu" id="iusu">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha">
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         </p>
     </form>
 </body>
