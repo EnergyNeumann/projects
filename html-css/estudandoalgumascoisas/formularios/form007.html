@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 7</title>
+</head>
+<body>
+    <h1>Formulário 7</h1>
+    <form action="cadastro.php" method="post">
+    <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+
+            <option value="" selected>---Escolha---</option>
+            <optgroup><label for="Estados Gerais">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup><label for="Estados Outros">
+                <option value="AC">Acre</option>
+                <option value="RN">Rondonia</option>
+                <option value="RR">Roraima</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+</body>
+</html>
