@@ -30,3 +30,7 @@ console.log(alunos.slice(0, 2))
 
 //se é array ou não
 console.log(alunos instanceof Array)
+
+//trocar array
+let array = [1,2,3];
+array = 'Outra';
