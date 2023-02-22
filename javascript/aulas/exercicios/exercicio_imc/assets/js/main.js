@@ -22,7 +22,7 @@ form.addEventListener('submit', function(e){
     const imc = getImc(peso, altura);
     const nivelImc = getNivelImc(imc);
 
-    console.log(imc);
+    console.log(imc, nivelImc);
 });
 
 function getNivelImc (imc){
