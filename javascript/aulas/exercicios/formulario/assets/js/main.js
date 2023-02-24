@@ -7,15 +7,18 @@ form.addEventListener("submit", function(evento){
     const inputIdade = evento.target.querySelector("#idade");
     const idade = Number(inputIdade.value);
     
-    console.log(idade)
-
     if (isNaN(idade)) {//se não for um número
         setResultado('A idade precisa ser um número', false);
         return;
     }else if(idade == 0){
         setResultado('A idade não foi identificada')
         return;
+    }else if(idade < 13){
+        setResultado('Você precisa ser maior de 13 anos')
+        return;
     }
+
+    
     
 });
 
