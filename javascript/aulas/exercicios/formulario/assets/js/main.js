@@ -1,4 +1,5 @@
 const form = document.querySelector("#formulario");
+//após submeter formulário
 form.addEventListener("submit", function(evento){
     //tirando funcionalidade do submit
     evento.preventDefault();
@@ -6,19 +7,28 @@ form.addEventListener("submit", function(evento){
     //adicionando idade para uma variável
     const inputIdade = evento.target.querySelector("#idade");
     const idade = Number(inputIdade.value);
-    
+    //validação de idade
     if (isNaN(idade)) {//se não for um número
         setResultado('A idade precisa ser um número', false);
         return;
     }else if(idade == 0){
-        setResultado('A idade não foi identificada')
+        setResultado('A idade não foi identificada', false);
         return;
     }else if(idade < 13){
-        setResultado('Você precisa ser maior de 13 anos')
+        setResultado('Você precisa ser maior de 13 anos', false);
         return;
     }
 
-    
+    const inputNome = evento.target.querySelector('#nome');
+    const nome = String(inputNome.value);
+    console.log(nome)
+    if (Number(nome)){
+        setResultado('O nome precisa ser em letras', false);
+        return;
+    }else if(nome == ''){
+        setResultado('O nome não foi identificado', false);
+        return;
+    }
     
 });
 
