@@ -7,5 +7,10 @@ form.addEventListener("submit", function(evento){
     const inputIdade = evento.target.querySelector("#idade");
     const idade = Number(inputIdade.value);
     
-
+    if (!idade) {//se não for digitado um número ou alguma coisa
+        setResultado('Idade inválida', false);
+        return;
+    }
 });
+
+function 
