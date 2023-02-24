@@ -7,10 +7,16 @@ form.addEventListener("submit", function(evento){
     const inputIdade = evento.target.querySelector("#idade");
     const idade = Number(inputIdade.value);
     
-    if (!idade) {//se não for digitado um número ou alguma coisa
-        setResultado('Idade inválida', false);
+    console.log(idade)
+
+    if (isNaN(idade)) {//se não for um número
+        setResultado('A idade precisa ser um número', false);
+        return;
+    }else if(idade == 0){
+        setResultado('A idade não foi identificada')
         return;
     }
+    
 });
 
 function criaP(){
@@ -27,9 +33,7 @@ function setResultado(msg, validando){
     const p = criaP();
 
     //se for válido, criará a classe resultado-valido. se for inválido, criará a resultado-invalido
-    if (validando){
-        p.classList.add('resultado-valido');
-    }else{
+    if (!validando){
         p.classList.add('resultado-invalido');
     }
 
