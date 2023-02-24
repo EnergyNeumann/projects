@@ -20,7 +20,8 @@ form.addEventListener("submit", function(evento){
     }
 
     const inputNome = evento.target.querySelector('#nome');
-    const nome = String(inputNome.value);
+    const nomespacado = String(inputNome.value);
+    const nome = nomespacado.trim() 
     console.log(nome)
     if (Number(nome)){
         setResultado('O nome precisa ser em letras', false);
