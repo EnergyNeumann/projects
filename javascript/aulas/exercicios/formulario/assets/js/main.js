@@ -42,4 +42,8 @@ function setResultado(msg, validando){
 
     p.innerHTML = msg;
     resultado.appendChild(p)
+
+    setTimeout(() => {
+        resultado.innerHTML = ''; //colocando um inner zerado
+      }, 6000)
 }
