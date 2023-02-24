@@ -21,13 +21,19 @@ form.addEventListener("submit", function(evento){
 
     const inputNome = evento.target.querySelector('#nome');
     const nomespacado = String(inputNome.value);
-    const nome = nomespacado.trim() 
-    console.log(nome)
+    const nome = nomespacado.trim(); 
     if (Number(nome)){
         setResultado('O nome precisa ser em letras', false);
         return;
     }else if(nome == ''){
         setResultado('O nome não foi identificado', false);
+        return;
+    }
+
+    const inputSenha = evento.target.querySelector('#senha');
+    const senha = String(inputSenha.value);
+    if (senha.length > 20){
+        setResultado('A senha precisa ser menor de 20 caracteres');
         return;
     }
     
