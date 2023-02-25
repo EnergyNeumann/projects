@@ -36,8 +36,13 @@ form.addEventListener("submit", function(evento){
         setResultado('A senha precisa ser menor de 20 caracteres');
         return;
     }
+
     
 });
+
+function limparBotao(){
+    form.reset()
+}
 
 function criaP(){
     const p = document.createElement('p');
