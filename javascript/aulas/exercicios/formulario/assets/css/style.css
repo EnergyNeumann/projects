@@ -53,6 +53,10 @@ form button {
   margin-top: 30px;
 }
 
+form button#limparbtn{
+  margin-top: 10px;
+}
+
 form button:hover {
   background: var(--primary-color-darker);
 }
