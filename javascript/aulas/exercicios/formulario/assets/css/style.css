@@ -61,6 +61,13 @@ form button:hover {
   background: var(--primary-color-darker);
 }
 
+#mostsenha{
+  margin-top: -55px;
+  margin-left: 550px;
+  height: 40px;
+  width: 40px;
+}
+
 #showpass{
   color: black;
 }
