@@ -1,4 +1,5 @@
 const form = document.querySelector("#formulario");
+
 //após submeter formulário
 form.addEventListener("submit", function(evento){
     //tirando funcionalidade do submit
@@ -32,17 +33,11 @@ form.addEventListener("submit", function(evento){
 
     const inputSenha = evento.target.querySelector('#senha');
     const senha = String(inputSenha.value);
-    if (senha.length > 20){
-        setResultado('A senha precisa ser menor de 20 caracteres');
+    if (senha.length < 10){
+        setResultado('A senha precisa ter pelo menos de 10 caracteres');
         return;
     }
-
-    
 });
-
-function limparBotao(){
-    form.reset()
-}
 
 function criaP(){
     const p = document.createElement('p');
@@ -68,4 +63,18 @@ function setResultado(msg, validando){
     setTimeout(() => {
         resultado.innerHTML = ''; //colocando um inner zerado
       }, 6000)
+}
+
+function mostrarSenha() {
+    let x = document.getElementById("senha");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+//função para limpar o botão
+function limparBotao(){
+    form.reset()
 }

@@ -61,6 +61,10 @@ form button:hover {
   background: var(--primary-color-darker);
 }
 
+#showpass{
+  color: black;
+}
+
 .resultado-invalido{
   background-color: rgb(255, 150, 150);
   padding: 10px 20px;
